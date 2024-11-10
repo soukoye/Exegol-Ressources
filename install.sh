@@ -1,9 +1,10 @@
 # Cloner le dépôt Exegol-Ressources et entrer dans le dossier
 apt update
-git clone https://github.com/Frozenka/Exegol-Ressources.git
+git clone https://github.com/soukoye/Exegol-Ressources.git
 cd Exegol-Ressources
 
 # Ajouter des configurations à tmux.conf et zsh_history
+cat addons.txt >> /opt/my-resources/setup/firefox/addons.txt
 cat tmux.conf >> ~/.tmux.conf
 cat aliases >> /opt/.exegol_aliases
 cat history >> ~/.zsh_history
@@ -54,10 +55,10 @@ mv Ghostpack-CompiledBinaries /opt/resources/windows
 # Télécharger des scripts spécifiques dans les bons répertoires
 cd /opt/resources/windows
 wget https://raw.githubusercontent.com/fashionproof/EnableAllTokenPrivs/master/EnableAllTokenPrivs.ps1
-wget https://raw.githubusercontent.com/Frozenka/linfast/main/winfast
+wget https://raw.githubusercontent.com/soukoye/linfast/main/winfast
 
 cd /opt/resources/linux
-wget https://raw.githubusercontent.com/Frozenka/linfast/main/linfast
+wget https://raw.githubusercontent.com/soukoye/linfast/main/linfast
 
 # Modifications visuelles
 sed -i 's/"#"/"%{$fg[green]%}➜ %{$reset_color%}"/g' /opt/.exegol_shells_rc
