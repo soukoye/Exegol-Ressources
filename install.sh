@@ -22,10 +22,14 @@ mv ./win/* /opt/resources/windows
 mv ./Linux/* /opt/resources/linux
 mv ./setup.sh /opt
 mv ./path.lst /opt
+mv ./places.sqlite /opt
 
 # Revenir à la racine et supprimer le dossier cloné
 cd ..
 rm -rf Exegol-Ressources
+
+# Importer ma bd de raccourci Firefox
+sqlite3 ~/.mozilla/firefox/*.Exegol/places.sqlite ".restore /opt/places.sqlite"
 
 # Installation de paquets Python et systèmes
 cd /tmp
