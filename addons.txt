@@ -2,3 +2,4 @@ https://addons.mozilla.org/en-US/firefox/addon/single-file/
 https://addons.mozilla.org/en-US/firefox/addon/sputnik-osint/
 https://addons.mozilla.org/en-US/firefox/addon/view-page-archive/
 https://addons.mozilla.org/en-US/firefox/addon/noscript/
+https://addons.mozilla.org/fr/firefox/addon/traduzir-paginas-web/
